@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 id="one"></h1>
+        <script>
+            function palin (x){
+                let y = x.toString();
+                let z = y.split("").reverse().join("");
+                // return [z === y] ? "yes" : "no";
+                if(z===y){
+                    return [y +":  true"];
+                }else{
+                    return [y +": false"];
+                }
+            }
+            // let nice = "madam"
+            document.getElementById("one").innerHTML=palin("madam")
+        </script>
+    </body>
+</html>

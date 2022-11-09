@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Reverse Number</h1>
+    </head>
+    <body>
+        <h2 id="one"></h2>
+        <script>
+            function reversenum(x){
+                var y = x.toString();
+                 z = y.split("").reverse().join("");
+                 return ["Original Number: "+ y+"<br>Reversed Number: "+z];
+                
+            }
+
+            document.getElementById("one").innerHTML = reversenum(32243);
+        </script>
+    </body>
+</html>
