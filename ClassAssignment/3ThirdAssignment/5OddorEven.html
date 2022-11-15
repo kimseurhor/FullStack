@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>
+        Enter Number : <br>
+        <input type="text" id="text1"></input>
+        <br>
+        Odd or Even : <br>
+        <input id="res"></input>
+        <br>
+        <input type="button" value="Display Result" onclick="oddoreven()">
+    </div>
+        <script>
+            function oddoreven(){
+                var num = parseInt(document.getElementById("text1").value);
+                var result = (num % 2  == 0) ? "even" : "odd";
+                document.getElementById("res").value = result;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="three"></p>
+        <script>
+                function remove(x,y){
+                    var p = x.toString();
+                    var z = p.substr(y)
+                    return [x +"<br>" +" Removed "+"<br>"+z]
+            }
+            document.getElementById("three").innerHTML = remove("Hello World, How are you?", 5)
+        </script>
+    </body>
+</html>

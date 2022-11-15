@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>
+            First Number : <br>
+            <input type="text" id="text1"></input>
+            <br>
+            Second Number : <br>
+            <input type="text" id="text2"></input>
+            <br>
+            Result : <br>
+            <input id="res"></input>
+            <br>
+            <input type="button" value="Display Result" onclick="addNumber()">
+        </div>
+    
+            <script>
+    
+                function addNumber(){
+                    var f_num = parseInt(document.getElementById("text1").value);
+                    var s_num = parseInt(document.getElementById("text2").value);
+    
+                    var sum = f_num + s_num;
+    
+                    document.getElementById("res").value = sum;  
+    
+                }
+            </script>
+    </body>
+</html>
