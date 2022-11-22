@@ -3,49 +3,43 @@
     <body>
         <body>
             <div>
+            <form name="myForm">
             Member Number : <br>
-            <input type="number" id="text1" min="1" required></input>
+            <input type="text" id="text1" min="1" name="memNum" required></input>
             <br>
             Password : <br>
-            <input type="number" id="text2" min="4" required></input>
+            <input type="password" id="text2" minlength="4" name="pwdNum" required></input>
             <br>
             <input type="button" value="Submit" onclick="yes()">
+        </form>
         </div>
         <script>
             function yes(){
-                var num = parseInt(document.getElementById("text1").value);
-                var s_num = parseInt(document.getElementById("text2").value);
-                // if(num.length === 0){
-                //     document.write("error")
-                // }else{
-                //     if(s_num<4){
-                //         document.write("error")
-                //     }else{
-                //         document.write("sucess")
-                // }}
+                var num = document.getElementById("text1").value;
+                var s_num = document.getElementById("text2").value;
+                
+                var mem = document.forms["myForm"]["memNum"].value;
+                var pwd = document.forms["myForm"]["pwdNum"].value;
 
-                if(isNaN(s_num&&num)){
-
-                    document.write("error")
-                    }
+                if(mem=="" || isNaN(num)){
+                alert("error")
+                curs = document.getElementById("text1")
+                curs.setSelectionRange(0,0)
+                curs.focus()
+                    }else if(pwd=="" || pwd.length<4){
+                        alert("error")
+                        curs = document.getElementById("text2")
+                        curs.setSelectionRange(0,0)
+                        curs.focus()}
+                         
                     else{
-                        if(s_num<4){
-                            document.write("eroor1")
-                        }else{
-                        document.write("sucess");
-                    }}
-                // }else{
-                //     document.write("error");
-                // }
-                // if(num.isEmpty()){
-                //     document.write("error")
-                // }else{
-                //     if (isNaN(s_num&&num)){
-                //         document.write("sucess")
-                //     }else{
-                //         document.write("error")
-                //     }
-                // }
+                    alert("success");
+
+
+                    }
+
+                    
+               
             }
         </script>
     </body>
