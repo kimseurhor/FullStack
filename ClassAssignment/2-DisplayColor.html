@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Display Color</h1>
+        <p id="one"></p>
+        <script>
+            var  color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
+                  o = ["th","st","nd","rd"];
+                  text = "";
+
+            for (let i=0; i < color.length;   i++) {
+
+            if(i == 0){
+                text += "1"+o[1]+" choice is "+color[i]+"<br>"
+            }else if (i == 1){
+                text += "2"+o[2]+" choice is "+color[i]+"<br>"
+            }else if (i == 2){
+                text += "3"+o[3]+" choice is "+color[i]+"<br>"
+            }else{
+                text += i+1 +o[0]+" choice is "+color[i]+"<br>"
+            }
+        }
+        document.getElementById("one").innerHTML=text
+        </script>
+    </body>
+</html>
