@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Odd or Even</h2>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+
+for (let i=0; i < 16;   i++) {
+//   text += "<br>The number is " + i;
+
+  if(i%2 == 0){
+    text +=i +" :Even"+"<br>"
+  }else{
+    text += i +" :Odd"+"<br>"
+  }
+
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
