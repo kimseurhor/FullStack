@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="one"></p>
+        <script>
+            function sumnum(x){
+                var sum = 0
+                for (let i = 1; i <= x; i++) {
+                    sum += i;
+                }
+                return [" The sum number of "+x+" is "+sum]
+            }
+                document.getElementById("one").innerHTML=sumnum(6)
+        </script>
+    </body>
+</html>
