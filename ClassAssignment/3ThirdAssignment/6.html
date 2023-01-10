@@ -5,10 +5,10 @@
             <div>
             <form name="myForm">
             Member Number : <br>
-            <input type="text" id="text1" min="1" name="memNum" required></input>
+            <input type="text" id="text1" name="memNum" required></input>
             <br>
             Password : <br>
-            <input type="password" id="text2" minlength="4" name="pwdNum" required></input>
+            <input type="password" id="text2" name="pwdNum" required></input>
             <br>
             <input type="button" value="Submit" onclick="yes()">
         </form>
@@ -16,7 +16,7 @@
         <script>
             function yes(){
                 var num = document.getElementById("text1").value;
-                var s_num = document.getElementById("text2").value;
+
                 
                 var mem = document.forms["myForm"]["memNum"].value;
                 var pwd = document.forms["myForm"]["pwdNum"].value;
