@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1 class="align">Student Management System</h1>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div class="hello">
+                    <div>
+                        <label>Student Name*</label><label class="validation-error hide" id="fullNameValidationError">Name is REQURIED.</label>
+                        <input type="text" name="stuName" id="stuName">
+                    </div>
+                    <div>
+                        <label>Student ID</label>
+                        <input type="number" name="stuID" id="stuID">
+                    </div>
+                    <div>
+                        <label>Student Gender</label>
+                        <input type="text" name="gen" id="gen">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div></div>
+                </form>
+            </td></tr>
+            <td class="hi">
+                <table class="list" id="List">
+                    <thead>
+                        <tr>
+                            <th class="hi">Student Name</th>
+                            <th class="hi">Student ID</th>
+                            <th class="hi">Student Gender</th>
+                            <th class="hi">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        
+    </table>
+    <script src="operation.js"></script>
+</body>
+
+</html>
